@@ -1,0 +1,213 @@
+/*#AC2424 -- the red you wanted. The other color is #293D3D*/
+
+html, body {
+	margin: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/*
+.tint-wrapper {
+	background-image: url(../img/home.jpg);
+	background-size: cover;
+	position: relative;
+}*/
+
+.header {
+	/*position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*background-color: #293D3D; */
+    height: 50%;
+    text-align:center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.pict img {
+	/*background: url(../img/21186.png) no-repeat center center; */
+	width: 100%;
+	height: 50%;
+}
+
+.tint:after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.topbar {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+	font-size: 4.2rem;
+	float: left;
+	/*color: #293D3D;*/
+}
+
+.mobile-h1 {
+    float: none;
+}
+
+h1 a, h1 a:hover {
+	color: #293D3D;
+	text-decoration: none;
+}
+
+.nav {
+	font-size: 15px;
+	list-style: none;
+	float: right;
+	display: block;
+	text-align: center;
+	padding: 10px;
+}
+
+.mobile-nav {
+    float: none;
+}
+
+.menu {
+	display: inline-block;
+	width: 100px;
+}
+
+ul li a {
+	color: dimgray;
+	text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+ul li a:hover {
+    color: #1EDB77;
+}
+
+a {
+	color: #1EDB77;
+}
+
+.textual-healing {
+	position: relative;
+	width: 960px;
+	margin: 0 auto 60px;
+	min-height: calc(100% - 40px);
+}
+
+.work, .project {
+    transition: background-color 0.5s ease;
+}
+
+.work:hover {
+	background-color: rgba(30, 219, 119, 0.49);
+}
+
+.project:hover {
+	background-color: rgba(30, 174, 219, 0.26);
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+footer {
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 40px;
+}
+
+@font-face {
+    font-family: 'si';
+    src: url('../socicon/socicon.eot');
+    src: url('../socicon/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../socicon/socicon.woff') format('woff'),
+         url('../socicon/socicon.ttf') format('truetype'),
+         url('../socicon/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+ 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(../socicon/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+    text-align: center;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+
+}
+
+.soc li a, .soc li a:hover {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 29px;
+    height: 29px;
+    line-height: 29px;
+    font-size: 15px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 25px;
+    color: #ffffff;
+    background-color: #1EDB77;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter:before {
+    content:'a';
+}
+.soc-linkedin:before {
+    content:'j';
+}
+.soc-instagram:before {
+    content:'x';
+}
+.soc-github:before {
+    content:'Q';
+}
+
+.soc-email2:before {
+    content:'.';
+}
+
